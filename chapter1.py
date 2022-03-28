@@ -3,6 +3,7 @@ import cv2
 # teste
 frameWidth = 640
 frameHeight = 480
+# Webcam, Mobile Cam in others
 cap = cv2.VideoCapture(0)
 cap.set(3, frameWidth)
 cap.set(4, frameHeight)
