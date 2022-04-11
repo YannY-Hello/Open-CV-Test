@@ -16,7 +16,7 @@ def draw(frame):
                 cv2.FONT_HERSHEY_PLAIN, 2, (255, 255, 255), 2)  # desenha texto
 
 
-cap = cv2.VideoCapture('http://192.168.9.240:8080/video')  # Inicia webcam
+cap = cv2.VideoCapture('rtsp://teste:1892893894ZFZ@192.168.12.228:2808/cam/realmonitor?channel=2987&subtype=0')  # Inicia webcam
 fundo = cap.read()[1][y:y + altura, x:x + altura, ]  # captura primeiro fundo
 while (cap.isOpened()):  # repetir
     frame = cap.read()[1]  # pega um quadro
